@@ -14,4 +14,4 @@ app.get('/', (req, res) => {
 
 app.listen(PORT, () => {
     console.log(`note-taker app listening at http://localhost:${PORT}`);
-})
+});
