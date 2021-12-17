@@ -1,8 +1,17 @@
-{
-    "database": [
-        {
-            "title":"Test Title",
-            "text":"Test text"
-        }
-    ]
-}
+[
+  {
+    "id": "0",
+    "title": "Test Title",
+    "text": "Test text"
+  },
+  {
+    "id": "1",
+    "title": "Fake title",
+    "text": "some kinda text"
+  },
+  {
+    "title": "Good Work!",
+    "text": "the note taker app is coming along nicely, i am really learning how to write a lot of these routes\n",
+    "id": "2"
+  }
+]
