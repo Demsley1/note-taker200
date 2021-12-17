@@ -1,9 +1,9 @@
 const router = require('express').Router();
 const { createNewNote } = require('../../lib/note');
-const dataBase = require('../../db/db.json');
+const { database } = require('../../db/db.json');
 
 router.get('/notes', (req, res) => {
-    
+    let results = database
 });
 
 router.post('/notes', (req, res) => {

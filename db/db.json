@@ -1,7 +1,8 @@
-[
-    {
-        "id": "1",
-        "title":"Test Title",
-        "text":"Test text"
-    }
-]
+{
+    "database": [
+        {
+            "title":"Test Title",
+            "text":"Test text"
+        }
+    ]
+}
