@@ -34,5 +34,17 @@ router.post('/notes', (req, res) => {
     res.json(note);
 });
 
+router.delete('/notes/:id', (req, res) => {
+    let id = req.params.id;
+    let x = database.find(data => data.id == id);
+    let y = database.indexOf(x);
+    database.splice(y, 1);
+    fs.writeFileSync(
+        path.join(__dirname, '../../db/db.json'),
+        JSON.stringify(database, null, 2)
+    );
+    res.status(204).send("note was deleted");
+});
+
 // Export all functions to main server page.
 module.exports = router;

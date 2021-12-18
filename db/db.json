@@ -1,12 +1,7 @@
 [
   {
-    "title": "Test Note",
-    "text": "example text",
-    "id": "9457749e-92c9-4a93-a193-b4d16595914c"
-  },
-  {
-    "title": "New note",
-    "text": "I think this works",
-    "id": "388b3137-537c-45f3-a5df-4f4267c11460"
+    "title": "Delete Note",
+    "text": "delete this note text",
+    "id": "86816154-beb0-42c9-8d9d-5020b606d9f3"
   }
 ]
