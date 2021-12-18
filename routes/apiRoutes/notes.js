@@ -35,10 +35,15 @@ router.post('/notes', (req, res) => {
 });
 
 router.delete('/notes/:id', (req, res) => {
+    // Set id value from request parameters id
     let id = req.params.id;
-    let x = database.find(data => data.id == id);
-    let y = database.indexOf(x);
-    database.splice(y, 1);
+    // Find the object in array where above id value matches objects set id value
+    let noteObject = database.find(data => data.id == id);
+    // Set index for noteObject variable to a new variable
+    let i = database.indexOf(noteObject);
+    // (Better than delete method) Use splice to remove index from database array
+    database.splice(i, 1);
+    // Have to sync file or change will only persist in local server
     fs.writeFileSync(
         path.join(__dirname, '../../db/db.json'),
         JSON.stringify(database, null, 2)
