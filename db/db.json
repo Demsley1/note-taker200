@@ -1,17 +1,12 @@
 [
   {
-    "id": "0",
-    "title": "Test Title",
-    "text": "Test text"
+    "title": "Test Note",
+    "text": "example text",
+    "id": "9457749e-92c9-4a93-a193-b4d16595914c"
   },
   {
-    "id": "1",
-    "title": "Fake title",
-    "text": "some kinda text"
-  },
-  {
-    "title": "Good Work!",
-    "text": "the note taker app is coming along nicely, i am really learning how to write a lot of these routes\n",
-    "id": "2"
+    "title": "New note",
+    "text": "I think this works",
+    "id": "388b3137-537c-45f3-a5df-4f4267c11460"
   }
 ]

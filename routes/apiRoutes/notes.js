@@ -1,6 +1,7 @@
 // Require dependancies, and npm packages like router method for express server, and the db.json page to be used as data inserted into page and added too on user input.
 const router = require('express').Router();
 const database = require('../../db/db.json');
+const  { v4: uuidv4 } = require('uuid');
 const fs = require('fs');
 const path = require('path');
 
@@ -12,7 +13,8 @@ router.get('/notes', (req, res) => {
 
 // Send a post request to server from same path, set the body id to a unique id, and run a function to create a new note.
 router.post('/notes', (req, res) => {
-    req.body.id = database.length.toString();
+    // set the id of the request body to a unique id
+    req.body.id = uuidv4();
     
     // functions accepts the body of the request being sent to server, and pushes its value into existing database array. 
     const createNewNote = (data, dbArray) => {
